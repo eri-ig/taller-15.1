@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+            <a class="navbar-brand" href="#">Tips de Desarrollo Web</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -20,20 +20,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex col-12 col-lg-2 order-lg-2" role="search">
-                    <input class="form-control me-2" type="search" name="searchBar" placeholder="Search" aria-label="Search">
-                </form>  
+                    <input class="form-control me-2" type="search" name="searchBar" placeholder="Search"
+                        aria-label="Search">
+                </form>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4 order-lg-1 justify-content-around">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+                        <a class="nav-link active" aria-current="page" href="#">Opciones#1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sit</a>
+                        <a class="nav-link" href="#">Opciones#2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Amet</a>
+                        <a class="nav-link" href="#">Opciones#3</a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> Opciones </a>
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                            aria-label="Toggle navigation"> Opciones </a>
                     </li>
                 </ul>
             </div>
@@ -41,18 +44,18 @@
     </nav>
 
     <header class="my-5 d-none d-lg-block text-center">
-        <h3> Lorem Ipsum </h3>
+        <h3> Cómo Optimizar el Rendimiento de una Página Web </h3>
         <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
-              </div>
-              <div class="carousel-item">
-                <p><strong>Suspendisse semper, ligula in finibus bibendum...</strong></p>
-              </div>
-              <div class="carousel-item">
-                <p><strong>Pellentesque eget leo venenatis, varius magna eu, consequat libero.</strong></p>
-              </div>
+                <div class="carousel-item active">
+                    <p><strong>Minimización de Archivos</strong></p>
+                </div>
+                <div class="carousel-item">
+                    <p><strong>Carga Diferida de Imágenes</strong></p>
+                </div>
+                <div class="carousel-item">
+                    <p><strong>Optimización de Bases de Datos</strong></p>
+                </div>
             </div>
         </div>
     </header>
@@ -65,62 +68,86 @@
             <li class="list-group-item p-3"><a href="#" class="text-dark">Opción 3</a></li>
             <li class="list-group-item p-3"><a href="#" class="text-dark">Opción 4</a></li>
         </ul>
-        
-        <div class="d-flex flex-wrap row-cols-1 row-cols-md-2 row-cols-lg-3 mx-3 col-10 col-lg-7" style="text-align: justify;">
+
+        <div class="d-flex flex-wrap row-cols-1 row-cols-md-2 row-cols-lg-3 mx-3 col-10 col-lg-7"
+            style="text-align: justify;">
 
             <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Minimización de Archivos</p>
                 <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mi sit amet lectus ultricies auctor. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    La primera estrategia para optimizar el rendimiento de una página web es la minimización de archivos
+                    CSS, JavaScript y HTML. Reducir el tamaño de estos archivos mediante la eliminación de espacios
+                    innecesarios, comentarios y líneas en blanco permite que la página se cargue más rápido.
+                    Herramientas como UglifyJS o CSSNano pueden automatizar este proceso.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Carga Diferida de Imágenes</p>
+                <p class="mb-0">
+                    Otra técnica es implementar la carga diferida de imágenes (lazy loading). Esto permite que las
+                    imágenes se carguen solo cuando el usuario las necesita, es decir, a medida que se desplaza por la
+                    página. Esto reduce el tiempo de carga inicial, mejorando la experiencia del usuario.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Compresión de Archivos</p>
+                <p class="mb-0">
+                    La compresión de archivos con Gzip o Brotli reduce el tamaño de los recursos que se transfieren
+                    desde el servidor al navegador. Comprimir los archivos puede reducir significativamente los tiempos
+                    de carga, especialmente en sitios con mucho contenido estático.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Uso de CDN</p>
+                <p class="mb-0">
+                    El uso de una red de distribución de contenido (CDN) es clave para mejorar el rendimiento global de
+                    un sitio web. Un CDN almacena copias del contenido en servidores ubicados en distintas partes del
+                    mundo, lo que reduce la latencia y acelera la entrega de recursos.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Optimización de Bases de Datos</p>
+                <p class="mb-0">
+                    Finalmente, optimizar consultas de bases de datos es esencial para los sitios web dinámicos. Esto
+                    implica reducir consultas repetitivas o innecesarias y asegurarse de que las bases de datos estén
+                    correctamente indexadas, lo que agiliza la respuesta del servidor a las solicitudes de los usuarios.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Cacheo del Navegador</p>
+                <p class="mb-0">
+                    Implementar el cacheo del navegador es una técnica esencial para mejorar el rendimiento de una
+                    página web. Al permitir que el navegador almacene ciertos archivos estáticos (como imágenes,
+                    archivos CSS y JavaScript) durante un periodo de tiempo, se reduce la cantidad de solicitudes que el
+                    servidor debe manejar cuando un usuario vuelve a visitar la página. Esto no solo acelera la
+                    experiencia del usuario, sino que también reduce la carga en el servidor.
+                </p>
+            </div>
+            <div class="bg-light px-2 mb-3">
+                <p class="text-uppercase">Reducir las Solicitudes HTTP</p>
+                <p class="mb-0">
+                    Una de las mejores prácticas para optimizar el rendimiento web es reducir el número de solicitudes
+                    HTTP que realiza la página. Esto se puede lograr combinando archivos CSS y JavaScript en un solo
+                    archivo, utilizando sprites de imágenes y eliminando plugins o recursos externos innecesarios. Menos
+                    solicitudes HTTP significa que el navegador puede renderizar la página mucho más rápido, mejorando
+                    el rendimiento general.
                 </p>
             </div>
             <div class="bg-light px-2 mb-3">
                 <p class="mb-0">
-                    Sed viverra sapien vitae turpis vehicula, id sagittis nunc luctus. 
-                    Vestibulum eros metus, varius mollis fringilla rutrum, porta et lorem. 
-                    Proin rutrum mi nunc, eget vehicula neque vehicula a.
+                    En conclusión, aplicar buenas prácticas en el desarrollo web es fundamental para optimizar tanto el
+                    rendimiento de las aplicaciones como la experiencia del usuario. Estrategias como la minificación de
+                    archivos, el uso eficiente del almacenamiento en caché, y la reducción de solicitudes HTTP permiten
+                    que las páginas carguen más rápido y sean más eficientes. Al implementar estas técnicas, los
+                    desarrolladores no solo mejoran la funcionalidad de sus sitios, sino que también garantizan una
+                    mejor accesibilidad y satisfacción para los usuarios.
                 </p>
             </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    Integer interdum velit neque, in ullamcorper felis gravida nec. 
-                    Aliquam ac nulla venenatis, tincidunt leo ac, euismod libero.
-                </p>
-            </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    Maecenas tristique turpis eu magna posuere, non imperdiet turpis tincidunt. Phasellus eu augue ex.
-                    Sed ac arcu posuere, dictum justo a, ullamcorper leo. Sed iaculis pretium vulputate. 
-                </p>
-            </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    Duis feugiat, neque ultrices feugiat venenatis, nisl ante posuere velit, volutpat placerat ipsum sapien non libero.
-                    Pellentesque eu sollicitudin diam.
-                </p>
-            </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    In euismod ligula quam, sit amet blandit metus sodales ut. 
-                    Aliquam auctor semper ligula, in faucibus leo faucibus quis.
-                </p>
-            </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    Phasellus luctus id erat vel pulvinar. Fusce ac tincidunt purus. 
-                    Nam aliquet elit molestie, tincidunt orci quis, ultricies enim.
-                    Fusce leo nulla, imperdiet id lectus vitae, convallis faucibus nisl. 
-                </p>
-            </div>
-            <div class="bg-light px-2 mb-3">
-                <p class="mb-0">
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </p>
-            </div>
-        
+
         </div>
 
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
 </html>
